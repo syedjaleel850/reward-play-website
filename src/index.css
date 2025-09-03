@@ -8,33 +8,62 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Gaming-themed background */
+    --background: 245 20% 8%;
+    --foreground: 45 100% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card system with gaming aesthetics */
+    --card: 245 15% 12%;
+    --card-foreground: 45 100% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 245 15% 12%;
+    --popover-foreground: 45 100% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Rich purple for gaming theme */
+    --primary: 270 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 270 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Gold accent for coins */
+    --secondary: 45 100% 65%;
+    --secondary-foreground: 245 20% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones for subtle elements */
+    --muted: 245 10% 20%;
+    --muted-foreground: 45 20% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Emerald for success states */
+    --accent: 142 76% 50%;
+    --accent-foreground: 245 20% 8%;
+
+    /* Success for game wins */
+    --success: 142 76% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning for limits */
+    --warning: 35 100% 60%;
+    --warning-foreground: 245 20% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 245 10% 25%;
+    --input: 245 10% 18%;
+    --ring: 270 100% 60%;
+
+    /* Gaming gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 100% 60%), hsl(280 100% 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(45 100% 65%), hsl(35 100% 60%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 50%), hsl(152 76% 60%));
+    --gradient-bg: linear-gradient(180deg, hsl(245 20% 8%), hsl(245 15% 12%));
+    
+    /* Coin animation */
+    --coin-glow: 0 0 20px hsl(45 100% 65% / 0.5);
+    --coin-shadow: 0 10px 30px hsl(45 100% 20% / 0.3);
+    
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
