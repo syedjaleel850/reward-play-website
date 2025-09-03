@@ -9,6 +9,16 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    host: "::",
+    port: 8080,
+    allowedHosts: [
+      "localhost",
+      "127.0.0.1",
+      "reward-play-website.onrender.com",
+      ".onrender.com", // Allow all Render.com subdomains
+    ],
+  },
   plugins: [
     react(),
     mode === 'development' &&
