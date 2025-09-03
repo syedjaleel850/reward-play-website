@@ -138,7 +138,16 @@ const Dashboard = () => {
               <h3 className="text-2xl font-bold">Games</h3>
             </div>
             
-            <SpinWheel />
+            <SpinWheel 
+              onRewardEarned={(amount) => {
+                // Optional: Add any additional logic when coins are earned
+                console.log(`User earned ${amount} coins from spin wheel`);
+              }}
+              onCoinsLost={(amount) => {
+                // Optional: Add any additional logic when coins are lost
+                console.log(`User lost ${amount} coins from spin wheel`);
+              }}
+            />
           </div>
 
           {/* Activity Section */}
